@@ -1,27 +1,27 @@
 <div align="center">
   <h1>🎣 J-Hooks</h1>
   <p>NPM package containing a set of custom hooks for React.</p>
-  <!-- <br/> -->
+  <br/>
   <div align="center">
-        <!-- <a href= "https://www.npmjs.com/package/use-custom-hooks/v/latest">
-            <img alt="npm" src="https://img.shields.io/npm/v/use-custom-hooks?style=for-the-badge">
+        <a href= "https://www.npmjs.com/package/j-hooks/v/latest">
+            <img alt="npm" src="https://img.shields.io/npm/v/j-hooks?style=for-the-badge">
         </a>
-        <a href= "https://www.npmjs.com/package/use-custom-hooks/">
-            <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/use-custom-hooks?style=for-the-badge">
+        <a href= "https://www.npmjs.com/package/j-hooks/">
+            <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/j-hooks?style=for-the-badge">
         </a>
-        <a href= "https://www.npmjs.com/package/use-custom-hooks/">
-            <img alt="npm Downloads/Week" src="https://img.shields.io/npm/dw/use-custom-hooks?style=for-the-badge">
-        </a>
-        <a href="https://github.com/aromalanil/useCustomHooks/issues">
-            <img alt="GitHub issues" src="https://img.shields.io/github/issues/aromalanil/useCustomHooks?style=for-the-badge">
-        </a>
-        <a href="https://github.com/aromalanil/useCustomHooks/commits/master">
-            <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/aromalanil/useCustomHooks?style=for-the-badge">
-        </a>
-        <a href="https://github.com/aromalanil/useCustomHooks/blob/master/LICENSE">
-            <img alt="GitHub License" src="https://img.shields.io/github/license/aromalanil/useCustomHooks?style=for-the-badge">
+        <!-- <a href= "https://www.npmjs.com/package/j-hooks/">
+            <img alt="npm Downloads/Week" src="https://img.shields.io/npm/dw/j-hooks?style=for-the-badge">
         </a> -->
-    <!-- </br> -->
+        <a href="https://github.com/FellowshipOfThePing/J-Hooks/issues">
+            <img alt="GitHub issues" src="https://img.shields.io/github/issues/FellowshipOfThePing/J-Hooks?style=for-the-badge">
+        </a>
+        <a href="https://github.com/FellowshipOfThePing/J-Hooks/commits/master">
+            <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/FellowshipOfThePing/J-Hooks?style=for-the-badge">
+        </a>
+        <a href="https://github.com/FellowshipOfThePing/J-Hooks/blob/master/LICENSE">
+            <img alt="GitHub License" src="https://img.shields.io/github/license/FellowshipOfThePing/J-Hooks?style=for-the-badge">
+        </a>
+        </br>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
