@@ -1,1 +1,0 @@
-export { default as jHooks } from './jHooks';

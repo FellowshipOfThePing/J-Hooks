@@ -1,22 +1,44 @@
 {
-  "private": true,
-  "workspaces": [
-    "example",
+  "name": "j-hooks",
+  "version": "1.0.0",
+  "description": "A collection of simple custom hooks for React",
+  "author": {
+    "name": "Jeremy Binder",
+    "email": "jeremysbinder@gmail.com",
+    "url": "https://twitter.com/Threee_Rings"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks",
+    "custom-hooks",
     "j-hooks"
   ],
+  "main": "dist/index.js",
   "scripts": {
-    "build": "yarn build:hook && yarn build:example",
-    "build:example": "yarn workspace example package",
-    "build:hook": "yarn workspace j-hooks build",
-    "bump": "yarn workspace j-hooks bump",
-    "develop": "yarn watch",
-    "watch": "concurrently -n Hook,Example \"yarn watch:hook\" \"yarn watch:example\"",
-    "watch:example": "yarn workspace example develop",
-    "watch:hook": "yarn workspace j-hooks watch",
-    "setup": "node ./scripts/setup.js"
+    "build": "babel src --out-dir dist",
+    "bump": "npm version",
+    "prepublishOnly": "yarn build",
+    "watch": "nodemon --watch src --exec \"yarn build\""
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   },
   "devDependencies": {
-    "concurrently": "^5.3.0"
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.8",
+    "@babel/preset-react": "^7.12.13",
+    "nodemon": "^2.0.7"
   },
-  "license": "MIT"
+  "files": ["dist"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FellowshipOfThePing/J-Hooks"
+  },
+  "bugs": {
+    "url": "https://github.com/FellowshipOfThePing/J-Hooks/issues"
+  }
 }

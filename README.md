@@ -1,91 +1,70 @@
-# 🧰 useCustomHook: React Hook Starter
+<div align="center">
+  <h1>🎣 J-Hooks</h1>
+  <p>NPM package containing a set of custom hooks for React.</p>
+  <!-- <br/> -->
+  <div align="center">
+        <!-- <a href= "https://www.npmjs.com/package/use-custom-hooks/v/latest">
+            <img alt="npm" src="https://img.shields.io/npm/v/use-custom-hooks?style=for-the-badge">
+        </a>
+        <a href= "https://www.npmjs.com/package/use-custom-hooks/">
+            <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/use-custom-hooks?style=for-the-badge">
+        </a>
+        <a href= "https://www.npmjs.com/package/use-custom-hooks/">
+            <img alt="npm Downloads/Week" src="https://img.shields.io/npm/dw/use-custom-hooks?style=for-the-badge">
+        </a>
+        <a href="https://github.com/aromalanil/useCustomHooks/issues">
+            <img alt="GitHub issues" src="https://img.shields.io/github/issues/aromalanil/useCustomHooks?style=for-the-badge">
+        </a>
+        <a href="https://github.com/aromalanil/useCustomHooks/commits/master">
+            <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/aromalanil/useCustomHooks?style=for-the-badge">
+        </a>
+        <a href="https://github.com/aromalanil/useCustomHooks/blob/master/LICENSE">
+            <img alt="GitHub License" src="https://img.shields.io/github/license/aromalanil/useCustomHooks?style=for-the-badge">
+        </a> -->
+    <!-- </br> -->
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
+<!-- <a href="https://github.com/aromalanil/useCustomHooks/graphs/contributors"><img src="https://img.shields.io/badge/all_contributors-5-orange.svg?style=for-the-badge" /></a> -->
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-A starter template for creating a new React Hook.
+  </div>
+</div>
+<!-- <br/> -->
 
-## 🚀 Getting Started
+## 🧰 Installation
 
-### tl;dr
-* `git clone https://github.com/colbyfayock/use-custom-hook [directory]`
-* `cd [directory]`
-* `yarn install && yarn setup`
-* `cd [hook-name] && npm publish`
+### Using npm or yarn 📦
 
-### Set up a new repository
-* Clone the `useCustomHook` repo locally and navigate to the project
+```bash
+# Using npm
+npm i j-hooks
 
-```
-git clone https://github.com/colbyfayock/use-custom-hook [directory]
-cd [directory]
+# Using yarn
+yarn add j-hooks
 ```
 
-* Install packages
+<!-- ## 📘 Available Hooks
 
-```
-yarn install
-```
+- [useForm](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-useForm)
+- [useStack](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usestack)
+- [useQueue](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usequeue)
+- [useToggle](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usetoggle)
+- [usePrevious](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-useprevious)
+- [useDebounce](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usedebounce)
+- [useDarkMode](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usedarkmode)
+- [useGeoLocation](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usegeolocation)
+- [useLocalStorage](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-uselocalstorage)
+- [useMousePosition](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-usemouseposition)
+- [useOfflineStatus](https://github.com/aromalanil/useCustomHooks/tree/master/docs#-useofflinestatus)
 
-* Run setup scripts
+## 📄 Documentation
 
-```
-yarn setup
-```
+For documentation, examples and other details refer [Documentation](https://github.com/aromalanil/useCustomHooks/tree/master/docs) -->
 
-During this process, the scripts will ask you for your name and your custom hook's name, including both a camelCase variation (useCustomHook) and a snake-case variation (use-custom-hook).
+<!-- ## 🤝🏻 Contributing
 
-It will replace all instances of the default useCustomHook name with your chosen name. Additionally, it will replace the name in the license and author name in the hook's `package.json` file with your name.
+### Guidelines 📋
 
-Lastly, the script will clean up the setup scripts and reset the git history with a fresh commit.
-
-This can only be ran once, as it will clean up the script files immediately after running.
-
-Make sure you remember to update your email address, author URL, git addresses, and anything else within the `[hook-name]/package.json` file.
-
-### Developing with your hook
-Running `yarn develop` in the root of this project will kick off a watch command in both the `example` and hook workspaces. This means any time you make a change to the hook, it will build, and subsequently, your example page will refresh with that new hook build.
-
-### Updating the example
-There's an example app set up in the `example` directory. You can use this space to add examples and any preferred documentation for your custom hook.
-
-### Publishing
-* Navigate to your hook directory (default is use-custom-hook)
-
-```
-cd [hook-name]
-```
-
-* Log in to npm
-
-```
-npm login
-```
-
-* Publish 🎉
-
-```
-npm publish
-```
-
-### Deploying your example
-Running `yarn build` in the root directory will create a new static build of the example website available in the `example/out` folder. This is standard HTML that can be uploaded to any static hosting software.
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://colbyfayock.com/newsletter"><img src="https://avatars2.githubusercontent.com/u/1045274?v=4" width="100px;" alt=""/><br /><sub><b>Colby Fayock</b></sub></a><br /><a href="https://github.com/colbyfayock/use-custom-hook/commits?author=colbyfayock" title="Code">💻</a> <a href="https://github.com/colbyfayock/use-custom-hook/commits?author=colbyfayock" title="Documentation">📖</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+Please read [CONTRIBUTING](https://github.com/aromalanil/useCustomHooks/blob/master/CONTRIBUTING.md) for Code of Conduct, details and the process for submitting pull requests to us. -->
