@@ -19,7 +19,8 @@
     "build": "babel src --out-dir dist",
     "bump": "npm version",
     "prepublishOnly": "yarn build",
-    "watch": "nodemon --watch src --exec \"yarn build\""
+    "watch": "nodemon --watch src --exec \"yarn build\"",
+    "test": "jest"
   },
   "license": "MIT",
   "peerDependencies": {
@@ -31,7 +32,12 @@
     "@babel/core": "^7.13.16",
     "@babel/preset-env": "^7.13.8",
     "@babel/preset-react": "^7.12.13",
-    "nodemon": "^2.0.7"
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^13.1.9",
+    "jest": "^27.0.1",
+    "nodemon": "^2.0.7",
+    "react": "16.8.0",
+    "react-dom": "16.8.0"
   },
   "files": [
     "dist"
