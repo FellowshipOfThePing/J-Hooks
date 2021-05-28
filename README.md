@@ -3,21 +3,12 @@
   <p>NPM package containing a set of custom hooks for React.</p>
   <br/>
   <div align="center">
-    <a href= "https://www.npmjs.com/package/j-hooks/v/latest">
-        <img alt="npm" src="https://img.shields.io/npm/v/j-hooks?style=for-the-badge">
-    </a>
-    <a href= "https://www.npmjs.com/package/j-hooks/">
-        <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/j-hooks?style=for-the-badge">
-    </a>
-    <a href="https://github.com/FellowshipOfThePing/J-Hooks/issues">
-        <img alt="GitHub issues" src="https://img.shields.io/github/issues/FellowshipOfThePing/J-Hooks?style=for-the-badge">
-    </a>
-    <a href="https://github.com/FellowshipOfThePing/J-Hooks/commits/main">
-        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/FellowshipOfThePing/J-Hooks?style=for-the-badge">
-    </a>
-    <a href="https://github.com/FellowshipOfThePing/J-Hooks/blob/main/LICENSE">
-        <img alt="GitHub License" src="https://img.shields.io/github/license/FellowshipOfThePing/J-Hooks?style=for-the-badge">
-    </a>
+    <img alt="Build" src="https://travis-ci.com/FellowshipOfThePing/J-Hooks.svg?branch=main">
+    <img alt="npm" src="https://img.shields.io/npm/v/j-hooks">
+    <img alt="npm bundle size" src="https://img.shields.io/github/last-commit/FellowshipOfThePing/J-Hooks?style=flat">
+    <!-- <img alt="GitHub issues" src="https://img.shields.io/github/issues/FellowshipOfThePing/J-Hooks?style=flat"> -->
+    <img alt="Minified Size" src="https://img.shields.io/bundlephobia/min/j-hooks?style=flat">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/FellowshipOfThePing/J-Hooks?style=flat">
     </br>
   </div>
 </div>

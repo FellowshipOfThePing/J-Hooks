@@ -1,6 +1,6 @@
 import * as React from "react";
 import userEvent from "@testing-library/user-event";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, act } from "@testing-library/react";
 
 import { UseWindowSizeExample } from "../examples/useWindowSize.example";
 
@@ -25,7 +25,10 @@ describe("useWindowSize", () => {
       configurable: true,
       value: 150,
     });
-    window.dispatchEvent(new Event("resize"));
+
+    act(() => {
+      window.dispatchEvent(new Event("resize"));
+    });
 
     expect(window.innerHeight).toBe(150);
     expect(width.textContent).toBe(`Width: 1024`);
@@ -43,7 +46,10 @@ describe("useWindowSize", () => {
       configurable: true,
       value: 200,
     });
-    window.dispatchEvent(new Event("resize"));
+
+    act(() => {
+      window.dispatchEvent(new Event("resize"));
+    });
 
     expect(window.innerWidth).toBe(200);
     expect(width.textContent).toBe(`Width: 200`);
@@ -61,7 +67,6 @@ describe("useWindowSize", () => {
       configurable: true,
       value: 1000,
     });
-    window.dispatchEvent(new Event("resize"));
 
     // Change window height
     Object.defineProperty(window, "innerHeight", {
@@ -69,7 +74,10 @@ describe("useWindowSize", () => {
       configurable: true,
       value: 2000,
     });
-    window.dispatchEvent(new Event("resize"));
+
+    act(() => {
+      window.dispatchEvent(new Event("resize"));
+    });
 
     expect(window.innerWidth).toBe(1000);
     expect(window.innerHeight).toBe(2000);
