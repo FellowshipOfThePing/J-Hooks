@@ -8,16 +8,16 @@ import { useState, useRef } from "react";
  * @returns {Array} Array containing typical react state return values, with an added ref that is changed whenever setMyState is called
  */
 const useStateWithRef = (data) => {
-  let [myState, _setMyState] = useState(data);
-  let myStateRef = useRef(data);
+	let [myState, _setMyState] = useState(data);
+	let myStateRef = useRef(data);
 
-  let setMyState = (data) => {
-    myStateRef.current = data;
+	let setMyState = (data) => {
+		myStateRef.current = data;
 
-    _setMyState(data);
-  };
+		_setMyState(data);
+	};
 
-  return [myState, setMyState, myStateRef];
+	return [myState, setMyState, myStateRef];
 };
 
 export default useStateWithRef;

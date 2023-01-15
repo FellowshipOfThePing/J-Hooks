@@ -1,6 +1,6 @@
 {
   "name": "j-hooks",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A collection of simple custom hooks for React",
   "author": {
     "name": "Jeremy Binder",
@@ -20,7 +20,9 @@
     "bump": "npm version",
     "prepublishOnly": "yarn build",
     "watch": "nodemon --watch src --exec \"yarn build\"",
-    "test": "jest"
+    "test": "jest",
+    "style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'",
+    "make-pretty": "prettier --write '**/*.{js,jsx,ts,tsx}'"
   },
   "license": "MIT",
   "peerDependencies": {
@@ -38,6 +40,7 @@
     "coveralls": "^3.1.0",
     "jest": "^27.0.1",
     "nodemon": "^2.0.7",
+    "prettier": "^2.8.3",
     "react": "16.8.0",
     "react-dom": "16.8.0"
   },
@@ -50,5 +53,6 @@
   },
   "bugs": {
     "url": "https://github.com/FellowshipOfThePing/J-Hooks/issues"
-  }
+  },
+  "dependencies": {}
 }

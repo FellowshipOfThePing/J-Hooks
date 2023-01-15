@@ -37,6 +37,7 @@ yarn add j-hooks
 - [useStateWithRef](https://github.com/FellowshipOfThePing/J-Hooks/tree/main/docs#-usestatewithref)
 - [useLocalStorage](https://github.com/FellowshipOfThePing/J-Hooks/tree/main/docs#-uselocalstorage)
 - [useOutsideAlerter](https://github.com/FellowshipOfThePing/J-Hooks/tree/main/docs#-useoutsidealerter)
+- [useDelayedUnset](https://github.com/FellowshipOfThePing/J-Hooks/tree/main/docs#-usedelayedunset)
 
 <br/>
 

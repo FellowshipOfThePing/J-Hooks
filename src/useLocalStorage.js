@@ -9,13 +9,15 @@ import { useState, useEffect } from "react";
  * @returns {Array} Array containing stateful value and updater function.
  */
 const useLocalStorage = (localStorageKey, defaultValue = "") => {
-  const [value, setValue] = useState(localStorage.getItem(localStorageKey) || defaultValue);
+	const [value, setValue] = useState(
+		localStorage.getItem(localStorageKey) || defaultValue
+	);
 
-  useEffect(() => {
-    localStorage.setItem(localStorageKey, value);
-  }, [value]);
+	useEffect(() => {
+		localStorage.setItem(localStorageKey, value);
+	}, [value]);
 
-  return [value, setValue];
+	return [value, setValue];
 };
 
 export default useLocalStorage;

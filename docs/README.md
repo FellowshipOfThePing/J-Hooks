@@ -6,6 +6,7 @@
 - [useStateWithRef](#-useStateWithRef)
 - [useLocalStorage](#-useLocalStorage)
 - [useOutsideAlerter](#-useOutsideAlerter)
+- [useDelayedUnset](#-useDelayedUnset)
 
 </br>
 
@@ -163,5 +164,38 @@ const DemoComponent = () => {
 
 1. `ref` (_ref_) : Created value from React.useRef, used to track click/key events
 2. `func` (_function_) : Function that is called on outside click or escape press
+
+</br>
+
+## ⏰ useDelayedUnset
+
+Sets the given state to false x milliseconds after being set to true.
+Useful for temporarily showing/highlighting UI elements.
+
+### Usage
+
+```jsx
+import React from "react";
+import { useDelayedUnset } from "j-hooks";
+
+const DemoComponent = () => {
+  const [componentShowing, setComponentShowing] = useDelayedUnset(1000);
+
+  /*
+  The useDelayedUnset hook can be used to conditionally render a component for a short period of time.
+  */
+
+  return (
+    <>
+      <button onClick={() => setComponentShowing(true)}>Show Component</button>
+      {componentShowing && <div>Component</div>}
+    </>
+  );
+};
+```
+
+### Parameters
+
+1. `delay` (_Number_) : Delay time in milliseconds
 
 </br>
