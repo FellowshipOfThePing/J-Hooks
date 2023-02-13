@@ -8,6 +8,7 @@ jobs:
     steps:
       - checkout
       - node/install:
+          install-yarn: true
           node-version: "16.18"
       - node/install-packages
       - run:
