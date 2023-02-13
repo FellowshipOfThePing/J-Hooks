@@ -1,58 +1,69 @@
 {
-  "name": "j-hooks",
-  "version": "1.0.3",
-  "description": "A collection of simple custom hooks for React",
-  "author": {
-    "name": "Jeremy Binder",
-    "email": "jeremysbinder@gmail.com",
-    "url": "https://twitter.com/Threee_Rings"
-  },
-  "keywords": [
-    "react",
-    "hooks",
-    "react-hooks",
-    "custom-hooks",
-    "j-hooks"
-  ],
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "babel src --out-dir dist",
-    "bump": "npm version",
-    "prepublishOnly": "yarn build",
-    "watch": "nodemon --watch src --exec \"yarn build\"",
-    "test": "jest",
-    "style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'",
-    "make-pretty": "prettier --write '**/*.{js,jsx,ts,tsx}'"
-  },
-  "license": "MIT",
-  "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.13.16",
-    "@babel/core": "^7.13.16",
-    "@babel/preset-env": "^7.13.8",
-    "@babel/preset-react": "^7.12.13",
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^13.1.9",
-    "coveralls": "^3.1.0",
-    "jest": "^27.0.1",
-    "nodemon": "^2.0.7",
-    "prettier": "^2.8.3",
-    "react": "16.8.0",
-    "react-dom": "16.8.0"
-  },
-  "files": [
-    "dist"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/FellowshipOfThePing/J-Hooks"
-  },
-  "bugs": {
-    "url": "https://github.com/FellowshipOfThePing/J-Hooks/issues"
-  },
-  "dependencies": {}
+	"name": "j-hooks",
+	"version": "1.0.4",
+	"description": "A collection of simple custom hooks for React",
+	"main": "./dist/cjs/index.js",
+	"module": "./dist/esm/index.js",
+	"types": "./dist/esm/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/FellowshipOfThePing/J-Hooks"
+	},
+	"author": {
+		"name": "Jeremy Binder",
+		"email": "jeremysbinder@gmail.com"
+	},
+	"keywords": [
+		"react",
+		"hooks",
+		"react-hooks",
+		"custom-hooks",
+		"j-hooks"
+	],
+	"files": [
+		"dist",
+		"LICENSE",
+		"README.md"
+	],
+	"bugs": {
+		"url": "https://github.com/FellowshipOfThePing/J-Hooks/issues"
+	},
+	"scripts": {
+		"build": "yarn build:esm && yarn build:cjs",
+		"build:esm": "tsc",
+		"build:cjs": "tsc --module commonjs --outDir dist/cjs",
+		"prepare": "yarn run build",
+		"test": "jest --config jest.config.js",
+		"style:prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'",
+		"make-pretty": "prettier --write '**/*.{js,jsx,ts,tsx}'"
+	},
+	"license": "MIT",
+	"peerDependencies": {
+		"react": "^16.8.0",
+		"react-dom": "^16.8.0"
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^13.3.0",
+		"@testing-library/react-hooks": "^8.0.1",
+		"@testing-library/user-event": "^14.4.3",
+		"@types/jest": "^28.1.1",
+		"@types/react": "^18.0.12",
+		"@typescript-eslint/eslint-plugin": "^5.27.1",
+		"@typescript-eslint/parser": "^5.27.1",
+		"coveralls": "^3.1.0",
+		"eslint": "^8.17.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-react": "^7.30.0",
+		"eslint-plugin-react-hooks": "^4.5.0",
+		"jest": "^28.1.1",
+		"jest-canvas-mock": "^2.4.0",
+		"jest-environment-jsdom": "^28.1.1",
+		"prettier": "^2.6.2",
+		"react": "^18.1.0",
+		"react-dom": "^18.1.0",
+		"ts-jest": "^28.0.4",
+		"typescript": "^4.7.3"
+	}
 }

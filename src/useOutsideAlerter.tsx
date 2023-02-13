@@ -1,23 +1,23 @@
-import { useEffect } from "react";
+import { RefObject, useEffect } from "react";
 
 /**
  * Custom hook, used to call a given function whenever a user clicks outside of the given ref, or presses escape.
  * Mostly used for improving UX around modals, dropdowns, and any other "floating" components that need to be closed easily.
  *
  * @param {ref} ref used to listen for events relative to a referenced component
- * @param {function} func is called onClick or onEscape
+ * @param {function} handler is called onClick or onEscape
  */
-const useOutsideAlerter = (ref, func) => {
+const useOutsideAlerter = (ref: RefObject<any>, handler: Function) => {
 	useEffect(() => {
-		const handleClickOutside = (event) => {
-			if (ref.current && !ref.current.contains(event.target)) {
-				func();
+		const handleClickOutside = (event: MouseEvent) => {
+			if (ref?.current && !ref?.current.contains(event.target)) {
+				handler();
 			}
 		};
 
-		const handleEscapeKey = (event) => {
-			if (ref.current && event.keyCode === 27) {
-				func();
+		const handleEscapeKey = (event: KeyboardEvent) => {
+			if (ref.current && event.key === "Escape") {
+				handler();
 			}
 		};
 

@@ -1,12 +1,14 @@
 import { useLayoutEffect, useState } from "react";
 
+type SizeTuple = [number, number];
+
 /**
  * Custom hook, returns an array with the width and height values of the current browser window, updates on change.
  *
  * @returns {Array} Array containing the width and height values of the current browser window.
  */
-const useWindowSize = () => {
-	const [size, setSize] = useState([0, 0]);
+const useWindowSize = (): SizeTuple => {
+	const [size, setSize] = useState<SizeTuple>([0, 0]);
 
 	useLayoutEffect(() => {
 		function updateSize() {
@@ -17,6 +19,7 @@ const useWindowSize = () => {
 		updateSize();
 		return () => window.removeEventListener("resize", updateSize);
 	}, []);
+
 	return size;
 };
 

@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
+
+type BooleanStateTuple = [boolean, Dispatch<SetStateAction<boolean>>];
 
 /**
  * Custom hook, returns a state with a setter that automatically sets the state to false x milliseconds after being set to true.
@@ -7,11 +9,11 @@ import { useEffect, useState } from "react";
  * @param {number} delay Delay time in milliseconds
  * @returns {Array} Array containing stateful value and updater function.
  */
-const setDelayedUnset = (delay = 100) => {
-	const [booleanState, setBooleanState] = useState(false);
+const setDelayedUnset = (delay: number = 100): BooleanStateTuple => {
+	const [booleanState, setBooleanState] = useState<boolean>(false);
 
 	useEffect(() => {
-		let timeout;
+		let timeout: ReturnType<typeof setTimeout>;
 		if (booleanState) {
 			timeout = setTimeout(() => {
 				setBooleanState(false);

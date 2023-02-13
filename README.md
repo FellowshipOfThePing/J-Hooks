@@ -44,3 +44,8 @@ yarn add j-hooks
 ## 📄 Documentation
 
 For documentation, examples and other details refer [Documentation](https://github.com/FellowshipOfThePing/J-Hooks/tree/main/docs)
+
+
+# Credits
+
+This repository has been converted from JS to TS, based on this tutorial: https://betterprogramming.pub/how-to-create-and-publish-react-typescript-npm-package-with-demo-and-automated-build-80c40ec28aca
