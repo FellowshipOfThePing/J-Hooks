@@ -3,7 +3,7 @@
   <p>NPM package containing a set of custom hooks for React.</p>
   <br/>
   <div align="center">
-    <img alt="Build" src="https://circleci.com/gh/FellowshipOfThePing/J-Hooks.svg?style=shield">
+    <img alt="Build" src="https://travis-ci.com/FellowshipOfThePing/J-Hooks.svg?branch=main">
     <a href='https://coveralls.io/github/FellowshipOfThePing/J-Hooks'>
       <img src='https://coveralls.io/repos/github/FellowshipOfThePing/J-Hooks/badge.svg' alt='Coverage Status' />
     </a>
@@ -43,4 +43,3 @@ yarn add j-hooks
 ## 📄 Documentation
 
 For documentation, examples and other details refer [Documentation](https://github.com/FellowshipOfThePing/J-Hooks/tree/main/docs)
-
