@@ -3,13 +3,12 @@
   <p>NPM package containing a set of custom hooks for React.</p>
   <br/>
   <div align="center">
-    <img alt="Build" src="https://travis-ci.com/FellowshipOfThePing/J-Hooks.svg?branch=main">
+    <img alt="Build" src="https://circleci.com/gh/FellowshipOfThePing/J-Hooks.svg?style=shield">
     <a href='https://coveralls.io/github/FellowshipOfThePing/J-Hooks'>
       <img src='https://coveralls.io/repos/github/FellowshipOfThePing/J-Hooks/badge.svg' alt='Coverage Status' />
     </a>
     <img alt="npm" src="https://img.shields.io/npm/v/j-hooks">
     <img alt="npm bundle size" src="https://img.shields.io/github/last-commit/FellowshipOfThePing/J-Hooks?style=flat">
-    <!-- <img alt="GitHub issues" src="https://img.shields.io/github/issues/FellowshipOfThePing/J-Hooks?style=flat"> -->
     <img alt="Minified Size" src="https://img.shields.io/bundlephobia/min/j-hooks?style=flat">
     <img alt="GitHub License" src="https://img.shields.io/github/license/FellowshipOfThePing/J-Hooks?style=flat">
     </br>

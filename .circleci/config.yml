@@ -1,15 +1,18 @@
-sudo: false
-language: node_js
-node_js:
-  - "14"
-branches:
-  only:
-    - main
-cache:
-  directories:
-    - node_modules
-install:
-  - yarn install
-script:
-  - yarn test
-  - yarn test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+version: 2.1
+orbs:
+  node: circleci/node@5.0.2
+jobs:
+  build-and-test:
+    docker:
+      - image: "cimg/base:stable"
+    steps:
+      - checkout
+      - node/install:
+          node-version: "16.18"
+      - node/install-packages
+      - run:
+          command: yarn test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+workflows:
+  build-and-test:
+    jobs:
+      - build-and-test
